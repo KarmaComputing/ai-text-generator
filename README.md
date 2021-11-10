@@ -5,6 +5,14 @@ Use with care.
 - https://www.turing.ac.uk/sites/default/files/2019-08/understanding_artificial_intelligence_ethics_and_safety.pdf
 - https://plato.stanford.edu/entries/ethics-ai/
 
+needed:
+
+```
+python-dev # e.g. apt install python3.8-dev
+libpng-dev 
+libjpeg-dev
+```
+
 ```
 ./install.sh
 ```
