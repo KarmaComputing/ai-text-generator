@@ -17,6 +17,13 @@ libjpeg-dev
 ./install.sh
 ```
 
+# Usage
+
+Generate text based on promt
+```
+curl -d prompt='What is the meaning of life?' http://127.0.0.1:5000/generate
+```
+
 # References
 
 ```

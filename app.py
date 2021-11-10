@@ -19,6 +19,6 @@ def hello_world():
 @app.route("/generate", methods=["POST"])
 def generate():
     prompt = request.form.get("prompt", None)
-    max_length = request.form.get("max_length", 50)
+    max_length = int(request.form.get("max_length", 50))
     res = generator(prompt, max_length=max_length, do_sample=True, temperature=0.9)
     return res[0]['generated_text']
