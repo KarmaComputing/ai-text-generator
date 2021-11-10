@@ -24,6 +24,11 @@ Generate text based on promt
 curl -d prompt='What is the meaning of life?' http://127.0.0.1:5000/generate
 ```
 
+Get longer text (takes longer to generate)
+```
+curl -d max_length=200 -d prompt='What is the meaning of life?' http://127.0.0.1:5000/generate
+```
+
 # References
 
 ```
