@@ -20,6 +20,5 @@ def hello_world():
 def generate():
     prompt = request.form.get("prompt", None)
     max_length = request.form.get("max_length", 50)
-    breakpoint()
     res = generator(prompt, max_length=max_length, do_sample=True, temperature=0.9)
-    return res
+    return res[0]['generated_text']
